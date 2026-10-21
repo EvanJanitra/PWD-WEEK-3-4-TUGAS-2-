@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Evan Janitra A12.2025.07363</title>
+
+    <!-- ini buat bootsrapp nyaa  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bar"></div>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a href="#home" class="navbar-brand">Evan Janitra || A12.2025.07363</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Menu">☰</button>
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+            <ul class="navbar-nav align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#profil">Profil Saya</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pendidikan">Riwayat Pendidikan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian &amp; Hobi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#penghargaan">Penghargaan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#proyek">Pengalaman Projek</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                <li class="nav-item"><button id="theme" aria-label="Ganti tema">🌙</button></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero" id="home">
+    <canvas id="net" aria-hidden="true"></canvas>
+    <div class="container">
+        <small>Halo, saya</small>
+        <h1 id="nama" aria-label="Evan Janitra Prabandara Rauuf">Evan Janitra Prabandara Rauuf</h1>
+        <p class="role"><b id="typed"></b><span class="caret"></span></p>
+        <p style="color: var(--mute)">Program Studi Sistem Informasi · Universitas Dian Nuswantoro</p>
+        <div class="d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-gold rounded-pill" href="#proyek">Lihat projek</a>
+            <a class="btn btn-ghost rounded-pill" href="#kontak">Kirim pesan</a>
+        </div>
+    </div>
+</header>
+
+<section id="profil">
+    <div class="container">
+        <h2 class="judul rv">Profil Saya</h2>
+        <div class="row g-5 align-items-start rv">
+            <div class="col-md-4 col-lg-3">
+                <div class="photo">
+                    <div class="ph" id="tilt"><img src="evanfoto.JPG" alt="Foto Evan Janitra" onerror="this.replaceWith(document.createTextNode('Foto belum bisa diakses'))"></div>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-9">
+                <p>Halo! Nama saya Evan Janitra Prabandara Rauuf, mahasiswa aktif Program Studi Sistem Informasi di Fakultas Ilmu Komputer, Universitas Dian Nuswantoro. Bagi saya, teknologi informasi bukan hanya soal menulis kode, tetapi tentang bagaimana data dan sistem dapat menghadirkan solusi nyata bagi kehidupan sehari-hari.</p>
+                <p>Saya tertarik pada <i>Data Analyst</i>: mengolah, membersihkan, dan membaca pola dari data untuk menemukan wawasan bermakna. Saya juga tertarik pada <i>Internet of Things</i> (IoT) serta otomatisasi sistem dan alat. Perpaduan data dan IoT inilah yang ingin terus saya dalami, karena data dari perangkat pintar dapat dianalisis untuk menghasilkan keputusan yang lebih baik.</p>
+                <p>Selain itu, saya menekuni pengembangan aplikasi web, perancangan basis data, dan pemodelan sistem, serta berminat di desain, videografi, dan fotografi. Di luar akademik, saya gemar naik gunung dan berolahraga: badminton, futsal, sepak bola, dan padel.</p>
+                <div class="row g-3 mt-2">
+                    <div class="col-4"><div class="stat"><b data-n="4">0</b><span>Jenjang pendidikan</span></div></div>
+                    <div class="col-4"><div class="stat"><b data-n="7">0</b><span>Keahlian utama</span></div></div>
+                    <div class="col-4"><div class="stat"><b data-n="2">0</b><span>Projek kuliah</span></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="pendidikan">
+    <div class="container">
+        <h2 class="judul rv">Riwayat Pendidikan</h2>
+        <div class="tl" id="tl"><span class="fillbar" id="fb"></span>
+            <div class="item rv"><small>2013 – 2019</small><h3><a href="https://sdnpetompon02.dikdas.semarangkota.go.id/" target="_blank" rel="noopener">SDN Petompon 02 Semarang</a></h3><p>Sekolah Dasar</p></div>
+            <div class="item rv"><small>2019 – 2022</small><h3><a href="https://mail.smpn5.semarangkota.go.id/frontend" target="_blank" rel="noopener">SMPN 5 Semarang</a></h3><p>Sekolah Menengah Pertama</p></div>
+            <div class="item rv"><small>2022 – 2025</small><h3><a href="https://sman14-smg.sch.id/" target="_blank" rel="noopener">SMAN 14 Semarang</a></h3><p>Sekolah Menengah Atas · Jurusan IPA</p></div>
+            <div class="item rv"><small>2025 – 2028</small><h3><a href="http://www.dinus.ac.id" target="_blank" rel="noopener">Universitas Dian Nuswantoro</a></h3><p>Perguruan Tinggi · Sistem Informasi</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="keahlian">
+    <div class="container">
+        <h2 class="judul rv">Keahlian dan Hobi</h2>
+        <p class="rv" style="margin-bottom: 16px; color: var(--mute)">Klik salah satu keahlian untuk melihat penjelasannya.</p>
+        <div class="d-flex flex-wrap gap-2 rv" id="chips">
+            <button class="chip on" data-i="Belajar HTML dan PHP untuk membangun halaman web yang dinamis dan terhubung ke server.">Web (HTML, PHP)</button>
+            <button class="chip" data-i="Merancang alur data dan struktur basis data lewat DFD dan ERD sebelum sistem dibangun.">Pemodelan Sistem (DFD &amp; ERD)</button>
+            <button class="chip" data-i="Mengolah, membersihkan, dan membaca pola data untuk menemukan wawasan.">Data Analyst</button>
+            <button class="chip" data-i="Merangkai sensor, mikrokontroler, dan aktuator menjadi sistem otomatis.">IoT</button>
+            <button class="chip" data-i="Menyusun tampilan visual yang rapi dan mudah dipahami.">Design</button>
+            <button class="chip" data-i="Mengambil dan menyunting video serta foto, terutama saat mendaki.">Videografi &amp; Fotografi</button>
+            <button class="chip" data-i="Mengelola tabel, relasi, dan query pada database MySQL.">Database MySQL</button>
+        </div>
+        <div id="skinfo" class="rv"></div>
+        <div class="row g-3 mt-4 rv">
+            <div class="col-6 col-md-3"><div class="hobi-box"><i>📡</i>IoT</div></div>
+            <div class="col-6 col-md-3"><div class="hobi-box"><i>⛰️</i>Naik gunung</div></div>
+            <div class="col-6 col-md-3"><div class="hobi-box"><i>📷</i>Videografi &amp; Fotografi</div></div>
+            <div class="col-6 col-md-3"><div class="hobi-box"><i>🏸</i>Futsal, Badminton, dll.</div></div>
+        </div>
+    </div>
+</section>
+
+<section id="penghargaan">
+    <div class="container">
+        <h2 class="judul rv">Penghargaan dan Sertifikat</h2>
+        <div class="row g-4">
+            <!-- Ganti nama file gambar (sertifikat1.jpg, dst.) dan teks dengan data asli kamu -->
+            <div class="col-md-6 col-lg-4 rv">
+                <div class="award">
+                    <div class="gambar"><img src="Juara III Kreativitas - ATC 2023_page-0001.jpg" alt="Gambar penghargaan/sertifikat 1" onerror="this.replaceWith(document.createTextNode('Gambar belum ditambahkan'))"></div>
+                    <h3>Juara 3 Kreativitas Agri Training Camp</h3>
+                    <p>Balai Pelatihan Pertanian Jawa Tengah</p>
+                    <span class="badge-tahun">2024</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 rv">
+                <div class="award">
+                    <div class="gambar"><img src="dataanalis.png" alt="Gambar penghargaan/sertifikat 2" onerror="this.replaceWith(document.createTextNode('Gambar belum ditambahkan'))"></div>
+                    <h3>Data Science</h3>
+                    <p>DNCC Universitas Dian Nuswantoro</p>
+                    <span class="badge-tahun">2025</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 rv">
+                <div class="award">
+                    <div class="gambar"><img src="Evan Janitra Prabandara Rauuf (1).png" alt="Gambar penghargaan/sertifikat 3" onerror="this.replaceWith(document.createTextNode('Gambar belum ditambahkan'))"></div>
+                    <h3>LKMM-TD</h3>
+                    <p>Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer</p>
+                    <span class="badge-tahun">2025</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="proyek">
+    <div class="container">
+        <h2 class="judul rv">Pengalaman Projek</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <article class="kartu rv">
+                    <div class="im"><img src="iotevan.jpeg" alt="Foto proyek IoT" onerror="this.style.display='none'"></div>
+                    <div class="tx">
+                        <h3>Automatic Eco-Friendly TrashBin</h3>
+                        <p>Tempat sampah pintar berbasis <i>Internet of Things</i> yang tutupnya terbuka otomatis tanpa disentuh, sehingga lebih praktis, higienis, dan ramah lingkungan.</p>
+                        <div class="more"><p style="margin-top: 12px">Saya belajar merangkai sensor, mikrokontroler, dan aktuator, menulis program pengendali, dan memahami alur sistem dari pembacaan sensor sampai aksi alat. Projek ini juga melatih kerja sama dan pemecahan masalah saat pengujian.</p></div>
+                        <button>Baca selengkapnya ▾</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6">
+                <article class="kartu rv">
+                    <div class="im"><img src="WhatsApp Image 2026-06-08 at 17.37.08 (1).jpeg" alt="Screenshot proyek web" onerror="this.style.display='none'"></div>
+                    <div class="tx">
+                        <h3>SIPILIH BREBES</h3>
+                        <p>Web app ini merupakan prototipe sistem e-voting berbasis Hyperledger Fabric yang mengintegrasikan verifikasi E-KTP melalui NFC dan validasi DPT. Sistem menerapkan algoritma SHA-256 untuk menjaga integritas suara, mencegah pemilihan ganda, mendeteksi manipulasi data, serta menyediakan bukti audit digital untuk mendukung pemilihan yang aman dan transparan.</p>
+                        <div class="more"><p style="margin-top: 12px">Sistem juga menerapkan pencegahan pemilihan ganda, deteksi indikasi manipulasi data suara, dan penyediaan bukti audit digital yang memungkinkan transaksi diverifikasi tanpa harus mengungkapkan identitas asli pemilih. Pengembangan ini ditujukan sebagai prototipe untuk mengevaluasi penerapan teknologi blockchain dalam meningkatkan keamanan dan keandalan sistem pemilihan elektronik.</p></div>
+                        <button>Baca selengkapnya ▾</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <aside class="note rv"><b>Catatan Kampus:</b> jadwal perkuliahan dan kurikulum ada di portal <a href="https://mhs.dinus.ac.id" target="_blank" rel="noopener">Siadin Udinus</a>.</aside>
+    </div>
+</section>
+
+<section id="kontak">
+    <div class="container">
+        <h2 class="judul judul-tengah rv">Form Kontak</h2>
+        <form class="form-kontak rv" action="simpan.php" method="post" id="form">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label" for="fnama">Nama lengkap</label>
+                    <input type="text" class="form-control" id="fnama" name="fnama" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="femail">Email</label>
+                    <input type="email" class="form-control" id="femail" name="femail" required>
+                </div>
+
+                <div class="col-md-6">
+                    <span class="form-label d-block">Jenis kelamin</span>
+                    <div class="pilihan">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="fjkel" id="pria" value="Pria">
+                            <label class="form-check-label" for="pria">Pria</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="fjkel" id="wanita" value="Wanita">
+                            <label class="form-check-label" for="wanita">Wanita</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <span class="form-label d-block">Hobi / minat</span>
+                    <div class="pilihan">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="fhobi[]" id="coding" value="Coding">
+                            <label class="form-check-label" for="coding">Coding</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="fhobi[]" id="membaca" value="Membaca">
+                            <label class="form-check-label" for="membaca">Membaca</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label" for="fprodi">Program studi</label>
+                    <select class="form-select" id="fprodi" name="fprodi">
+                        <option value="SI">Sistem Informasi S1</option>
+                        <option value="TI">Teknik Informatika S1</option>
+                        <option value="DKV">Desain Komunikasi Visual S1</option>
+                    </select>
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label" for="fpesan">Pesan</label>
+                    <textarea class="form-control" id="fpesan" name="fpesan" rows="4" maxlength="300"></textarea>
+                    <div class="cnt"><span id="c">0</span>/300</div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center gap-3 mt-2">
+                    <button class="btn btn-gold rounded-pill" type="submit">Kirim pesan</button>
+                    <button class="btn btn-ghost rounded-pill" type="reset">Batal</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer>&copy; 2026 Evan Janitra Prabandara Rauuf · Pemrograman Web Sistem Informasi, Universitas Dian Nuswantoro</footer>
+
+<button id="top" aria-label="Kembali ke atas">↑</button>
+<div id="toast" role="status"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const $ = s => document.querySelector(s);
+    const $$ = s => [...document.querySelectorAll(s)];
+    const rm = matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+    
+    const nm = $('#nama');
+    nm.innerHTML = nm.textContent.split(' ')
+        .map((w, i) => `<span style="animation-delay:${0.15 * i}s">${w}</span>`).join(' ');
+
+    
+    const roles = ['Mahasiswa Sistem Informasi', 'Data Analyst', 'IoT Enthusiast', 'Web Developer', 'Pendaki gunung'];
+    let ri = 0, ci = 0, del = false;
+    (function type() {
+        const t = roles[ri];
+        $('#typed').textContent = t.slice(0, ci);
+        if (!del && ci === t.length) {
+            del = true;
+            return setTimeout(type, 1400);
+        }
+        if (del && ci === 0) {
+            del = false;
+            ri = (ri + 1) % roles.length;
+        }
+        ci += del ? -1 : 1;
+        setTimeout(type, del ? 35 : 75);
+    })();
+
+    
+    const cv = $('#net'), cx = cv.getContext('2d');
+    let W, H, pts = [], mx = -999, my = -999;
+
+    function size() {
+        W = cv.width = cv.offsetWidth;
+        H = cv.height = cv.offsetHeight;
+        pts = Array.from({ length: Math.min(80, W / 14 | 0) }, () => ({
+            x: Math.random() * W,
+            y: Math.random() * H,
+            vx: (Math.random() - 0.5) * 0.4,
+            vy: (Math.random() - 0.5) * 0.4
+        }));
+    }
+    size();
+    addEventListener('resize', size);
+
+    $('#home').addEventListener('pointermove', e => {
+        const r = cv.getBoundingClientRect();
+        mx = e.clientX - r.left;
+        my = e.clientY - r.top;
+    });
+
+    function draw() {
+        cx.clearRect(0, 0, W, H);
+        const gold = getComputedStyle(document.documentElement).getPropertyValue('--gold').trim();
+        cx.fillStyle = gold;
+        cx.strokeStyle = gold;
+
+        for (const p of pts) {
+            p.x += p.vx;
+            p.y += p.vy;
+            if (p.x < 0 || p.x > W) p.vx *= -1;
+            if (p.y < 0 || p.y > H) p.vy *= -1;
+            const dm = Math.hypot(p.x - mx, p.y - my);
+            if (dm < 140) {
+                p.x += (p.x - mx) * 0.02;
+                p.y += (p.y - my) * 0.02;
+            }
+            cx.globalAlpha = 0.7;
+            cx.beginPath();
+            cx.arc(p.x, p.y, dm < 140 ? 3 : 1.8, 0, 7);
+            cx.fill();
+        }
+
+        for (let i = 0; i < pts.length; i++) {
+            for (let j = i + 1; j < pts.length; j++) {
+                const d = Math.hypot(pts[i].x - pts[j].x, pts[i].y - pts[j].y);
+                if (d < 120) {
+                    cx.globalAlpha = (1 - d / 120) * 0.35;
+                    cx.beginPath();
+                    cx.moveTo(pts[i].x, pts[i].y);
+                    cx.lineTo(pts[j].x, pts[j].y);
+                    cx.stroke();
+                }
+            }
+        }
+        if (!rm) requestAnimationFrame(draw);
+    }
+    draw();
+
+    
+    const secs = $$('section'), links = $$('.navbar .nav-link');
+
+    function onScroll() {
+        const h = document.documentElement, y = h.scrollTop, max = h.scrollHeight - innerHeight;
+        $('#bar').style.width = (y / max * 100) + '%';
+        $('#top').classList.toggle('show', y > 500);
+
+        let cur = '';
+        secs.forEach(s => { if (y + 140 >= s.offsetTop) cur = s.id; });
+        links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + cur));
+
+        const tl = $('#tl').getBoundingClientRect();
+        $('#fb').style.height = Math.max(0, Math.min(tl.height - 12, innerHeight * 0.6 - tl.top)) + 'px';
+    }
+    addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    $('#top').onclick = () => scrollTo({ top: 0 });
+
+    
+    const io = new IntersectionObserver(entries => entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+        e.target.querySelectorAll('[data-n]').forEach(c => {
+            const n = +c.dataset.n;
+            let k = 0;
+            const t = setInterval(() => {
+                c.textContent = ++k;
+                if (k >= n) clearInterval(t);
+            }, 220);
+        });
+    }), { threshold: 0.15 });
+    $$('.rv').forEach(el => io.observe(el));
+
+    // switch gelap ke teranggggg
+    const root = document.documentElement, tb = $('#theme');
+    tb.onclick = () => {
+        const toLight = root.dataset.theme === 'dark';
+        root.dataset.theme = toLight ? 'light' : 'dark';
+        root.dataset.bsTheme = toLight ? 'light' : 'dark';
+        tb.textContent = toLight ? '☀️' : '🌙';
+    };
+
+    
+    links.forEach(a => a.addEventListener('click', () => {
+        const m = bootstrap.Collapse.getInstance($('#menu'));
+        if (m) m.hide();
+    }));
+
+    // efek tilt fotonyakk
+    const tilt = $('#tilt');
+    tilt.addEventListener('pointermove', e => {
+        const r = tilt.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        tilt.style.transform = `rotateY(${x * 14}deg) rotateX(${-y * 14}deg)`;
+    });
+    tilt.addEventListener('pointerleave', () => tilt.style.transform = '');
+
+    // keahlian
+    const info = $('#skinfo');
+    function pick(c) {
+        $$('.chip').forEach(x => x.classList.remove('on'));
+        c.classList.add('on');
+        info.textContent = c.dataset.i;
+    }
+    $$('.chip').forEach(c => c.onclick = () => pick(c));
+    pick($('.chip'));
+
+    // kartu projek
+    $$('.kartu button').forEach(b => b.onclick = () => {
+        const c = b.closest('.kartu');
+        c.classList.toggle('open');
+        b.textContent = c.classList.contains('open') ? 'Tutup ▴' : 'Baca selengkapnya ▾';
+    });
+
+    // form
+    const ta = $('#fpesan');
+    ta.oninput = () => $('#c').textContent = ta.value.length;
+
+    function toast(m) {
+        const t = $('#toast');
+        t.textContent = m;
+        t.classList.add('show');
+        setTimeout(() => t.classList.remove('show'), 2800);
+    }
+    $('#form').addEventListener('submit', () => toast('Pesan dikirim. Terima kasih!'));
+    $('#form').addEventListener('reset', () => {
+        $('#c').textContent = 0;
+        toast('Form dikosongkan');
+    });
+</script>
+</body>
+</html>
